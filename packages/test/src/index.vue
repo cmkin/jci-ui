@@ -2,13 +2,15 @@
 	<div>
 		这是一个test组件
 
-		<Input v-model="value" placeholder="Enter something..." style="width: 300px" />
+		<Input ref="input" v-model="value"   />
 	</div>
 </template>
 
 <script>
+	import { Input } from 'view-design'
 	export default {
 		name: 'jci-input',
+		components:{Input},
 		data() {
 			return {
 				value:this.valueP

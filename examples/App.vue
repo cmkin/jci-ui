@@ -1,7 +1,8 @@
 <template>
   <div id="app">
 	  外部value:{{value}}
-	<jci-input v-model="value"></jci-input>
+	<jci-input v-model="value" type="number" :abc="value"></jci-input>
+	
   </div>
 </template>
 

@@ -1,8 +1,11 @@
 import Vue from 'vue'
-import ViewUI from 'view-design';
+
 import '../packages/theme-default/src/index.less';
 
-Vue.use(ViewUI);
+//这样引入，iview的组件也可用
+
+/* import ViewUI from 'view-design';
+Vue.use(ViewUI); */  
 
 
 // 导入测试组件
