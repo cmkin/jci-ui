@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-	<jci-test></jci-test>
+	  外部value:{{value}}
+	<jci-input v-model="value"></jci-input>
   </div>
 </template>
 
@@ -9,6 +10,11 @@
 
 export default {
   name: 'App',
+  data(){
+	  return{
+		  value:"123"
+	  }
+  },
   components: {
     
   }

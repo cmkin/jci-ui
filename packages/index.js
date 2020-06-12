@@ -1,3 +1,10 @@
+import Vue from 'vue'
+import ViewUI from 'view-design';
+import '../packages/theme-default/src/index.less';
+
+Vue.use(ViewUI);
+
+
 // 导入测试组件
 import test from './test'
 
