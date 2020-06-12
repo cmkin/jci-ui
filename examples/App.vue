@@ -3,6 +3,9 @@
 	  外部value:{{value}}
 	<jci-input v-model="value" type="number" :abc="value"></jci-input>
 	
+	
+	<jci-input  placeholder="Enter text" style="width: 200px;" v-model="value" type="number" :suffix="value"></jci-input>
+	
   </div>
 </template>
 
@@ -13,7 +16,7 @@ export default {
   name: 'App',
   data(){
 	  return{
-		  value:"123"
+		  value:"ios-search"
 	  }
   },
   components: {

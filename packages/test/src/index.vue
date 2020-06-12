@@ -2,7 +2,7 @@
 	<div>
 		这是一个test组件
 
-		<Input ref="input" v-model="value"   />
+		<Input v-bind="$attrs" ref="input" v-model="value"   />
 	</div>
 </template>
 
