@@ -8,7 +8,7 @@
 	
 	
 	
-	<jci-codemirror></jci-codemirror>
+	<jci-codemirror type="js" ></jci-codemirror>
 	
   </div>
 </template>

@@ -1,4 +1,4 @@
-﻿import vs from '../core';
+import vs from '../core';
 import $ from 'jquery';
 import store from 'store';
 import {resetEditorLayout} from './layout'
@@ -19,7 +19,7 @@ function getActiveWebEditor() {
 
 
 export function ly1() {
-
+	return
     var $webEditor = getActiveWebEditor();
     var editorType = $webEditor.data("type");
     var storeName = editorType + "-boxs-row";

@@ -5,10 +5,65 @@
 
     <template v-if="layoutType==='ly1'">
       <div class="web-editor web-editor1" data-type="editor1">
-
-        <div class="boxes boxes-row boxes-row-2" id="boxes-row">
-          <div class="box box-row box-code">
-            <div class="boxes boxes-col boxes-col-3" id="boxes-col">
+		
+		
+		
+		
+			
+		
+        <div class="boxes boxes-row boxes-row-2" id="boxes-row" >
+          <div class="box box-row box-code" style="height: 100% !important;" >
+			  
+			  <!-- html -->
+			  <div class="html" v-if="type=='html'" style="height: 95%;">
+			  	<div class="box-menu">
+			  	  <div class="editor-actions" style="padding-left: 20px;">
+			  	   
+			  	    <h2 class="box-title">
+			  	      HTML
+			  	    </h2>
+			  	
+			  	  </div>
+			  	</div>
+			  	<div class="vs-editor j_rp" style="height: 90%;" data-type="html">
+			  	
+			  	</div>
+			  </div>
+			  
+			  <!-- css -->
+			  <div class="css" v-if="type=='css'" style="height: 95%;">
+			  	<div class="box-menu">
+			  	  <div class="editor-actions" style="padding-left: 20px;">
+			  	   
+			  	    <h2 class="box-title">
+			  	      css
+			  	    </h2>
+			  	
+			  	  </div>
+			  	</div>
+			  	<div class="vs-editor j_rp" style="height: 90%;" data-type="css">
+			  	
+			  	</div>
+			  </div>
+			  
+			  <!-- js -->
+			  <div class="js"  v-if="type=='js'" style="height: 95%;">
+			  	<div class="box-menu" >
+			  	  <div class="editor-actions" style="padding-left: 20px;">
+			  		
+			  		<h2 class="box-title">
+			  		  JS
+			  		</h2>
+			  	
+			  	  </div>
+			  	</div>
+			  	<div class="vs-editor j_rp" style="height: 90%;" data-type="javascript">
+			  	
+			  	</div>
+			  </div>
+			  
+			  
+            <div class="boxes boxes-col boxes-col-3" id="boxes-col" v-if="false">
               
               <div class="box box-col">
                 <div class="box-menu">
@@ -68,7 +123,7 @@
           </div>
 
 
-          <div class="box box-row box-result" id="box-result">
+          <!-- <div class="box box-row box-result" id="box-result">
 
             <div class="drag-cover" id="drag-cover"></div>
             <div class="result-container j_rp" id="result-container">
@@ -76,7 +131,7 @@
             </div>
 
 
-          </div>
+          </div> -->
 
 
         </div>

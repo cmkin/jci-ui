@@ -90,8 +90,9 @@ export default {
     data() {
 
         return {
-          
-            layoutType: layoutType,
+			type:store.get("vs-type"),
+           // layoutType: layoutType,
+            layoutType: 'ly1',
             domChangeFns: {
                 finish: function () {
                     layoutChangeEvents.call(this);

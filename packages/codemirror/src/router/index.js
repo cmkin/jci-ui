@@ -209,7 +209,15 @@ var watch = {
     fontSize: function (val, oval) {
    
         Theme.setFontSize(val)
-    }
+    },
+	type:function(val, oval){
+		
+		store.set("vs-type", val)
+	},
+	valueP:function(val, oval){
+		
+		store.set("vs-valueP", val)
+	},
 };
 
 
@@ -225,15 +233,31 @@ export default {
     data() {
         return data;
     },
+	props:{
+		type:{
+			type:String,
+			default:'js'
+		},
+		valueP:{
+			type:String,
+			default:''
+		}
+	},
 
     methods: methods,
 
     watch: watch,
 
     mounted: function () {
-
+		
         mounted.call(this)
+		store.set("vs-type", this.type)
+		store.set("vs-valueP", this.valueP)
     },
+	model: {
+		prop: 'valueP',
+		event: 'input'
+	},
 
     //创建前回调函数
     beforeCreate: function () {

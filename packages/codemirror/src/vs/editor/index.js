@@ -1,4 +1,4 @@
-﻿import vs from '../core';
+import vs from '../core';
 import $ from 'jquery';
 import store from 'store';
 import config from '../../config';
@@ -125,7 +125,7 @@ function doRun(data, reload) {
     runIframe.style.boxSizing = 'border-box';
     runIframe.style.width = '100%';
     runIframe.frameborder = '0';
-    runContainer.appendChild(runIframe);
+    //runContainer.appendChild(runIframe);
     vs.runIframe = runIframe;
 
     var eidtorDatas = window.top.eidtorDatas = {
@@ -255,7 +255,8 @@ function getEditorStore() {
 *设置编辑器内容
 */
 function setEditorValue(data) {
-
+	
+	
     var editor;
 
     for (var o in data) {

@@ -57,7 +57,7 @@ config.themes = {
 };
 
 //默认主题
-config.defaultTheme =  "theme-blue";
+config.defaultTheme =  "theme-black";
 
 
 
