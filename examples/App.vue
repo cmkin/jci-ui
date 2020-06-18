@@ -4,7 +4,11 @@
 	<jci-input v-model="value" type="number" :abc="value"></jci-input>
 	
 	
-	<jci-input  placeholder="Enter text" style="width: 200px;" v-model="value" type="number" :suffix="value"></jci-input>
+	<jci-input  placeholder="Enter text" style="width: 200px;" v-model="value" type="text" :suffix="value"></jci-input>
+	
+	
+	
+	<jci-codemirror></jci-codemirror>
 	
   </div>
 </template>
@@ -26,5 +30,7 @@ export default {
 </script>
 
 <style>
-
+		#app{
+			padding: 20px;
+		}
 </style>
