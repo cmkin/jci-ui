@@ -1,5 +1,5 @@
 <template>
-	<div>
+	
 		<div id="editor-container" class="editor-container">
 		
 		  <symbol id="gear" viewBox="0 0 100 100">
@@ -301,13 +301,14 @@
 		      版本：{{version}}
 		    </div>
 		  </footer>
-		
 		  
+		   
 		</div>
 		
-		<pen-setting-dialog></pen-setting-dialog>
-	</div>
-	
+		<!-- <penSettingDialog></penSettingDialog> -->
+			
+		
+		
 </template>
 
 <script>
