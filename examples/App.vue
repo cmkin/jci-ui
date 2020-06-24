@@ -7,8 +7,14 @@
 	<jci-input  placeholder="Enter text" style="width: 200px;" v-model="value" type="text" :suffix="value"></jci-input>
 	
 	
-	
-	<jci-codemirror type="js" ></jci-codemirror>
+	jci-upload:
+	<jci-upload BASEURL="123"></jci-upload>
+	<br />
+	<!-- <jci-codemirror type="js" ></jci-codemirror>
+	 -->
+	<br />
+	jci-code-editor:
+	<jci-code-editor :autoCompletion="true" style="height: 500px;"></jci-code-editor>
 	
   </div>
 </template>
@@ -32,5 +38,6 @@ export default {
 <style>
 		#app{
 			padding: 20px;
+			
 		}
 </style>

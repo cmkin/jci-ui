@@ -11,11 +11,13 @@ Vue.use(ViewUI); */
 // 导入测试组件
 import test from './test'
 import codemirror from './codemirror'
+import codeEditor from './code-editor'
+import upload from './upload'
 
 
 // 存储组件列表
 const components = [
-  test,codemirror
+  test,codemirror,codeEditor,upload
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册

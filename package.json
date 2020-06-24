@@ -1,21 +1,24 @@
 {
   "name": "jci-ui",
-  "version": "0.1.23",
+  "version": "0.1.25",
   "private": false,
   "main": "lib/jci-ui.umd.min.js",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+	"fb":"npm publish",
     "build-lib": "vue-cli-service build --target lib --name jci-ui --dest lib packages/index.js  ",
     "build-theme": "gulp build  --gulpfile packages/theme-default/gulpfile.js && cp-cli packages/theme-default/lib lib/theme-default"
   },
   "dependencies": {
+    "brace": "^0.11.1",
     "core-js": "^3.6.5",
     "dedent": "^0.7.0",
     "dialog": "^0.3.1",
     "feather-icons": "^4.28.0",
     "jquery": "^3.5.1",
+    "js-beautify": "^1.11.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.6",
     "noty": "^3.2.0-beta",
